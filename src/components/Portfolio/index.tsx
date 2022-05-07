@@ -11,11 +11,11 @@ export default function Portfolio() {
     return (
         <>
             <Modal image={p1} id="portfolioModal1" imageAlt="Serviços em altura" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
-            <Modal image={p2} id="portfolioModal2" imageAlt="Pisos" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
-            <Modal image={p3} id="portfolioModal3" imageAlt="Pisos" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
-            <Modal image={p7} id="portfolioModal4" imageAlt="Telhados" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
-            <Modal image={p5} id="portfolioModal5" imageAlt="Pinturas decoradas" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
-            <Modal image={p6} id="portfolioModal6" imageAlt="Faixadas" title='Rapel e serviços em altura' subtitle="Caixas d'água e cilos" description='Descrição do serviço' />
+            <Modal image={p2} id="portfolioModal2" imageAlt="Pisos" title='Pisos' subtitle="Pintura industrial de pisos" description='Descrição do serviço' />
+            <Modal image={p3} id="portfolioModal3" imageAlt="Telhados" title='Telhados' subtitle="Pintura de telhados" description='Personalize os espaços' />
+            <Modal image={p7} id="portfolioModal4" imageAlt="Pinturas decoradas" title='Pinturas decoradas' subtitle="Personalize os espaços" description='Descrição do serviço' />
+            <Modal image={p5} id="portfolioModal5" imageAlt="Faixadas" title='Faixadas' subtitle="Restauração de faixadas" description='Descrição do serviço' />
+            <Modal image={p6} id="portfolioModal6" imageAlt="Demarcação" title='Demarcação' subtitle="Quadras poliesportivas e estacionamento" description='Descrição do serviço' />
 
             <section className="page-section bg-light" id="portfolio">
                 <div className="container">
