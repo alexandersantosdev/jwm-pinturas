@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function Contact({ facebook, instagram, phone }: { facebook: string, instagram: string, phone: string }) {
     return (
         <section className="page-section" id="contact">
             <div className="container">
@@ -7,9 +7,9 @@ export default function Contact() {
                     <h3 className="section-subheading text-muted">Entre em contato conosco que tão logo te responderemos</h3>
                 </div>
                 <div className="text-center" id="socialMedia">
-                    <a className="btn btn-whatsapp btn-xl text-uppercase" href="https://api.whatsapp.com/send?phone=5541995962870&text=Olá, estou entrando em contato para saber mais sobre seus serviços de pintura" aria-label="Whatsapp"><i className="fab fa-whatsapp"></i> &nbsp;WhatsApp</a>
-                    <a className="btn btn-facebook btn-xl text-uppercase" href="https://facebook.com" aria-label="Facebook"><i className="fab fa-facebook-f"></i> &nbsp;Facebook</a>
-                    <a className="btn btn-instagram btn-xl text-uppercase" href="https://www.instagram.com/" aria-label="Instagram"><i className="fab fa-instagram"></i> &nbsp;Instagram</a>
+                    <a className="btn btn-whatsapp btn-xl text-uppercase" href={`https://api.whatsapp.com/send?phone=${phone}&text=Olá, estou entrando em contato para saber mais sobre seus serviços de pintura`} aria-label="Whatsapp"><i className="fab fa-whatsapp"></i> &nbsp;WhatsApp</a>
+                    <a className="btn btn-facebook btn-xl text-uppercase" href={facebook} aria-label="Facebook"><i className="fab fa-facebook-f"></i> &nbsp;Facebook</a>
+                    <a className="btn btn-instagram btn-xl text-uppercase" href={instagram} aria-label="Instagram"><i className="fab fa-instagram"></i> &nbsp;Instagram</a>
                 </div>
                 <br /><br />
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">

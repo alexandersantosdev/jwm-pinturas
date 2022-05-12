@@ -1,17 +1,26 @@
 import close from '../../images/close-icon.svg';
+import Carousel from '../Carousel';
 
-type modalData = {
-    title: string;
-    subtitle: string;
-    image: string;
-    imageAlt: string;
-    description: string;
+type ModalData = {
+    modalData: {
+        title: string;
+        subtitle: string;
+        mainImage: string;
+        image1?: string;
+        image2?: string;
+        image3?: string;
+        image4?: string;
+        image5?: string;
+        image6?: string;
+        imageAlt: string;
+        description: string;
+    },
     id: string;
 }
 
-export default function Modal({ title, subtitle, id, image, imageAlt, description }: modalData) {
+export default function Modal({ modalData: { title, subtitle, description, image1, image2, image3, image4, image5, image6 }, id }: ModalData) {
     return (
-        <div className="portfolio-modal modal fade" id={id} role="dialog" aria-labelledby={id}>
+        <div className="portfolio-modal modal fade" id={`portfolioModal${id}`} role="dialog" aria-labelledby={`portfolioModal${id}`}>
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="close-modal" data-bs-dismiss="modal"><img src={close} alt="Close modal" /></div>
@@ -21,7 +30,7 @@ export default function Modal({ title, subtitle, id, image, imageAlt, descriptio
                                 <div className="modal-body">
                                     <h2 className="text-uppercase">{title}</h2>
                                     <p className="item-intro text-muted">{subtitle}</p>
-                                    <img className="img-fluid d-block mx-auto" src={image} alt={imageAlt} />
+                                    <Carousel images={[image1, image2, image3, image4, image5, image6]} />
                                     <p>{description}</p>
 
                                     <button className="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">

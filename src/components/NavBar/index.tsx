@@ -1,11 +1,10 @@
-import Logo from '../../images/logo.png';
-export default function NavBar() {
+export default function NavBar({ title }: { title: string }) {
 
     return (
 
         <nav className="navbar navbar-expand-lg fixed-top" id="mainNav">
             <div className="container">
-                <a className="navbar-brand" href="#page-top"><img src={Logo} alt="Logo da JWM Pinturas" /></a>
+                <a className="navbar-brand" href="#page-top">{title}</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="fas fa-bars ms-1"></i>
                 </button>
